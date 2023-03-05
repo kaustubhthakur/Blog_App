@@ -23,7 +23,7 @@ app.use('/uploads', express.static(__dirname + '/uploads'));
 
 const port = 5000;
 
-mongoose.connect('mongodb+srv://kaustubh_23:ALEXTHEGREAT11@cluster0.sdjvfqm.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect();
 
 app.post('/register', async (req,res) => {
     const {username,password} = req.body;
